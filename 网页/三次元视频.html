@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三次元视频</title>
+</head>
+<style>
+    .flex {
+        display: flex;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+
+
+    .bai {
+        background-color: aliceblue;
+    }
+
+    .fen {
+        background-color: pink;
+    }
+
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .video {
+        width: 360px;
+        height: 360px;
+        justify-content: cover;
+    }
+
+    .bj {
+        margin: 10px;
+    }
+</style>
+
+<body class="flex fen">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 2;" class="bj bai">
+        <div style="justify-content: center;"><a href="index.html">
+                <p style="font-size: 40PX; color: burlywood;">返回主页</p>
+            </a></div>
+    </div>
+    <!--内容区-->
+    <div>
+        <!--头部栏-->
+        <div style="height: 60px; width: 1600px; z-index: 1;" class="bj bai">
+            <p style="font-size: 30px; color: pink;">小王的神秘空间：三次元图片</p>
+        </div>
+        <!--视频区-->
+<div class="image-container">
+    <video class="video" src="视频1 (1).mp4" controls></video>
+    <video class="video" src="视频1 (2).mp4" controls></video>
+    <video class="video" src="视频1 (3).mp4" controls></video>
+    <video class="video" src="视频1 (4).mp4" controls></video>
+</div>
+    </div>
+</body>
+
+</html>
